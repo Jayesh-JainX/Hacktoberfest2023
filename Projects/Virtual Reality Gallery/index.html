@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a-scene>
+      <!-- Camera and Cursor -->
+      <a-camera look-controls position="0 1.6 0"></a-camera>
+      <a-cursor></a-cursor>
+      
+      <!-- Gallery Container -->
+      <a-entity id="gallery-container">
+        <a-sphere id="red-sphere" radius="1" position="0 0 -5" color="red">
+          <a-animation attribute="position" from="0 0 -5" to="0 2 -5" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+        </a-sphere>
+        
+        <a-box id="blue-box" width="1" height="1" depth="1" position="2 0 -5" color="blue">
+          <a-animation attribute="position" from="2 0 -5" to="2 2 -5" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+        </a-box>
+        
+        <a-cylinder id="green-cylinder" radius="0.5" height="1" position="-2 0 -5" color="green">
+          <a-animation attribute="position" from="-2 0 -5" to="-2 2 -5" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+        </a-cylinder>
+        
+        <!-- Add more 3D objects with animations here -->
+      </a-entity>
+    </a-scene>
+    <script src="script.js"></script>
+  </body>
+</html>
