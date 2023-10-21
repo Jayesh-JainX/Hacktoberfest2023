@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Theme Changer</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="default-theme.css">
+</head>
+<body>
+    <h1>Welcome to Our Website</h1>
+    <p>This is some sample content on our website.</p>
+    
+    <div id="theme-selector">
+        <button onclick="changeTheme('default-theme.css')">Default Theme</button>
+        <button onclick="changeTheme('dark-theme.css')">Dark Theme</button>
+        <br><br>
+        <button onclick="changeTheme('light-theme.css')">Light Theme</button>
+        <br><br>
+        <button onclick="changeTheme('blue-theme.css')">Blue Theme</button>
+        <button onclick="changeTheme('green-theme.css')">Green Theme</button>
+        <button onclick="changeTheme('red-theme.css')">Red Theme</button>
+        <br><br>
+        <button onclick="changeTheme('purple-theme.css')">Purple Theme</button>
+        <br><br>
+    </div>
+    
+    <div id="feature-selector">
+        <label for="animation-toggle">Enable Animation:</label>
+        <input type="checkbox" id="animation-toggle" onchange="toggleAnimation()">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
