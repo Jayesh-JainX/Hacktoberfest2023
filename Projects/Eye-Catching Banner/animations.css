@@ -1,0 +1,17 @@
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(to right, #3498db, #34ad86);
+    }
+    25% {
+        background: linear-gradient(to right, #34ad86, #3498db);
+    }
+    50% {
+        background: linear-gradient(to right, #3498db, #34ad86);
+    }
+    75% {
+        background: linear-gradient(to right, #34ad86, #3498db);
+    }
+    100% {
+        background: linear-gradient(to right, #3498db, #34ad86);
+    }
+}
