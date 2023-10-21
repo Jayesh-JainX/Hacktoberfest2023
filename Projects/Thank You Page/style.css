@@ -1,0 +1,149 @@
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+    font-size: 18px;
+    position: relative;
+}
+
+.message {
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.confetti {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background-image: url('confetti.png');
+    background-size: cover;
+    animation: confetti-fall 2s linear infinite;
+}
+
+footer {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 0 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        transform: translateX(-50%) translateY(100vh);
+    }
+}
+
+.animation-container {
+    position: relative;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #f06;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveCircle 3s infinite;
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+    background-color: #f9c;
+    clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 46.2%, 70.9% 76.8%, 76.4% 100%, 50% 88.2%, 23.6% 100%, 29.1% 76.8%, 0% 46.2%, 38.2% 38.2%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveStar 2s infinite;
+}
+
+@keyframes moveCircle {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(100px, 100px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes moveStar {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(100px, 100px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
