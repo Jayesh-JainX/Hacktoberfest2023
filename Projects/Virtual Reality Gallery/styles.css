@@ -1,0 +1,16 @@
+/* Add your CSS styles for the gallery here */
+#gallery-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #red-sphere, #blue-box {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  #red-sphere:hover, #blue-box:hover {
+    transform: scale(1.1);
+  }
+  
