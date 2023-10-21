@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Emoji Chat</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Custom Emoji Chat</h1>
+        <div class="chat-messages">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="emoji-picker">
+            <button class="emoji-button" onclick="toggleEmojiPicker()">😀</button>
+            <div class="emoji-list hidden" id="emojiList">
+                <img src="https://cdn.pixabay.com/photo/2020/12/27/20/24/smile-5865208_1280.png" alt="Smile Emoji" class="emoji" onclick="addEmoji('😀')">
+                <img src="https://www.emoji.com/wp-content/uploads/2018/12/emoji-icon-glossy-01-08-person-emotion-red-heart-72dpi-forPersonalUseOnly.png" alt="Heart Emoji" class="emoji" onclick="addEmoji('❤️')">
+                <img src="https://cdn.pixabay.com/photo/2022/12/11/04/11/thumbs-up-7648171_1280.png" alt="Thumbs Up Emoji" class="emoji" onclick="addEmoji('👍')">
+                <img src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/moai.png" alt="stone Emoji" class="emoji" onclick="addEmoji('🗿')">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
