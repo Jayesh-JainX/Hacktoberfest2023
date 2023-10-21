@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Quest - Onboarding Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Project Quest</h1>
+    </header>
+    <main>
+        <div id="quiz-container">
+            <h2>Project Quest - Level 1</h2>
+            <p>Answer the following question to proceed:</p>
+            <p id="question">What is the capital of France?</p>
+            <ul id="choices">
+                <li><button onclick="checkAnswer('Paris')">Paris</button></li><br>
+                <li><button onclick="checkAnswer('Berlin')">Berlin</button></li><br>
+                <li><button onclick="checkAnswer('London')">London</button></li><br>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Project Quest</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
