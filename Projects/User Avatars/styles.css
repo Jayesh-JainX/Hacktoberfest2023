@@ -1,0 +1,49 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.avatar {
+    width: 200px; /* Increased the width */
+    height: 200px; /* Increased the height */
+    background-color: #3498db;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-content {
+    text-align: center;
+    color: white;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+}
+
+button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
