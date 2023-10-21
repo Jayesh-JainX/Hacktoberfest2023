@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(135deg, #3494E6, #EC6EAD);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s infinite;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.mobile-menu {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-items li {
+    margin: 10px 0;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
