@@ -1,0 +1,49 @@
+.infographic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .chart {
+    width: 80%;
+    height: 60vh;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bar {
+    background-color: #3498db;
+    border: 1px solid #2980b9;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-fill-mode: both;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bar img {
+    width: 50px; /* Adjust the image size as needed */
+    height: 50px;
+    margin: 10px 0;
+  }
+  
+  .bar .label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  @keyframes grow {
+    0% {
+      height: 0;
+      opacity: 0;
+    }
+    100% {
+      height: 100%;
+      opacity: 1;
+    }
+  }
+  
